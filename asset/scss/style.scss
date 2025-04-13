@@ -1,0 +1,80 @@
+@import "./base/base";
+@import "./base/reset";
+@import "./components/productItem";
+@import "./helper/mixin";
+@import "./helper/variable";
+@import "./layout/footer";
+@import "./layout/header";
+
+header {
+  .bar {
+    padding: 200px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 100%;
+    display: none;
+  }
+  .logo {
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 40px;
+      color: $color-bg-btn;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  background-color: $color-bg-header;
+  padding: 50px 0;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    nav {
+      ul {
+        display: flex;
+
+        align-items: center;
+        margin: 0;
+
+        li {
+          a {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            &:hover .bar {
+              display: flex;
+            }
+
+            span {
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+    .active-header {
+      .btn-search {
+        margin-left: -55px;
+      }
+      button {
+        margin-left: 5px;
+        @include styleBTN($color-bg-btn, white, $color-bg-btn-hover, black);
+      }
+      input {
+        border-radius: 5px;
+        border: 1px solid white;
+        padding: 5px 20px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

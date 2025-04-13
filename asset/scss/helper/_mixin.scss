@@ -1,0 +1,15 @@
+@mixin styleBTN($bg-color, $text-color, $hover-bg, $hover-text) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-bg;
+    color: black;
+  }
+}
