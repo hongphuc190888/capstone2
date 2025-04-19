@@ -1,6 +1,9 @@
 header {
   .navbar {
     padding: 30px 0;
+    .navbar-toggler-icon {
+      background-color: white;
+    }
   }
   a {
     text-decoration: none;

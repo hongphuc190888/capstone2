@@ -58,3 +58,15 @@
     transform: scale($size);
   }
 }
+@mixin stylebtnmobile($fs, $px, $py, $bgcl, $cl, $bgclhover) {
+  font-size: $fs;
+  padding: $px $py;
+  background-color: $bgcl;
+  border-radius: 5px;
+  color: $cl;
+  transition: all 0.3s;
+  &:hover {
+    color: black;
+    background-color: $bgclhover;
+  }
+}

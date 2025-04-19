@@ -10,25 +10,70 @@
   text-transform: uppercase;
   .carousel-inner {
     display: flex;
-
+  }
+  @media only screen and (max-width: 3000px) {
     .carousel-caption {
-      display: block;
+      display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+
+      p:first-child {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: black;
+        font-weight: bold;
+      }
 
       h1 {
         color: rgb(102, 51, 111);
-        margin: 20px 0;
         font-weight: bold;
-        span {
-          color: $color-bg-btn;
-        }
+        font-size: 50px;
+        margin: 15px 0 10px 0;
+      }
+
+      p {
+        font-size: 15px;
       }
 
       button {
-        margin-top: 70px;
-        padding: 10px 25px;
+        padding: 10px 30px;
         @include styleBTN($color-bg-btn, white, $color-bg-btn-hover, black);
+      }
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .carousel-caption {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      p:first-child {
+        font-size: 5px;
+        margin-bottom: 0px;
+      }
+
+      h1 {
+        color: rgb(102, 51, 111);
+        font-weight: bold;
+        font-size: 10px;
+        margin: 5px 0 5px 0;
+      }
+
+      p {
+        font-size: 5px;
+      }
+
+      button {
+        @include stylebtnmobile(
+          8px,
+          8px,
+          3px,
+          $color-bg-btn,
+          white,
+          $color-bg-btn-hover
+        );
       }
     }
   }
