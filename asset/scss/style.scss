@@ -7,74 +7,156 @@
 @import "./layout/header";
 
 header {
-  .bar {
-    padding: 200px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: 160px;
-    width: 100%;
-    display: none;
+  .navbar-brand {
+    color: $color-bg-btn;
+    text-transform: uppercase;
   }
-  .logo {
-    a {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 40px;
-      color: $color-bg-btn;
+  .btn-header {
+    button {
+      width: fit-content;
+      @include styleBTNCart($color-bg-btn, white, $color-bg-btn-hover, black);
     }
+  }
+  .dropdown-menu {
+    position: absolute;
+    transform: translateX(-15%);
+    transition: all 0.3s;
+  }
+}
+.banner {
+  text-transform: uppercase;
+  .carousel-inner {
+    display: flex;
+
+    .carousel-caption {
+      display: block;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: rgb(102, 51, 111);
+        margin: 20px 0;
+        font-weight: bold;
+        span {
+          color: $color-bg-btn;
+        }
+      }
+
+      button {
+        margin-top: 70px;
+        @include styleBTN($color-bg-btn, white, $color-bg-btn-hover, black);
+      }
+    }
+  }
+}
+.category {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: $top;
+  h3 {
+    font-size: $text-h3;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  .category-image {
+    a {
+      text-align: center;
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      width: 90%;
+      transition: ease 0.3s;
+    }
+  }
+}
+
+.products {
+  a {
+    text-decoration: none;
+  }
+  margin: $top;
+
+  .viewProducts {
+    text-align: center;
+    margin-top: 20px;
+    button {
+      @include styleBTN($color-bg-btn, white, $color-bg-btn-hover, black);
+    }
+  }
+  .products-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    p {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: $text-h3;
+    }
+  }
+  .tab-menu {
+    ul {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .card {
+    @include styleHoverImg(1.1);
+    .card-body {
+      h5 {
+        color: $color-bg-btn;
+        text-transform: uppercase;
+      }
+    }
+    .card-footer {
+      .start {
+        i {
+          color: #fbbf18;
+        }
+      }
+      button {
+        @include styleBTNCart($color-bg-btn, white, $color-bg-btn-hover, black);
+      }
+    }
+  }
+}
+.listProducts {
+  .card {
   }
   a {
     text-decoration: none;
-    color: black;
   }
-  background-color: $color-bg-header;
-  padding: 50px 0;
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    nav {
-      ul {
-        display: flex;
-
-        align-items: center;
-        margin: 0;
-
-        li {
-          a {
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            &:hover .bar {
-              display: flex;
-            }
-
-            span {
-              padding-left: 5px;
-            }
-          }
-        }
-      }
+  margin-top: $top;
+  .wrapper-card {
+    margin-top: 20px;
+    .card {
+      @include styleHoverImg(1.1);
+      cursor: pointer;
     }
-    .active-header {
-      .btn-search {
-        margin-left: -55px;
-      }
-      button {
-        margin-left: 5px;
-        @include styleBTN($color-bg-btn, white, $color-bg-btn-hover, black);
-      }
-      input {
-        border-radius: 5px;
-        border: 1px solid white;
-        padding: 5px 20px;
+  }
+  .btn {
+    padding: 5px 20px;
+    @include styleBTNCart($color-bg-btn, white, $color-bg-btn-hover, black);
+  }
+}
 
-        &:focus {
-          outline: none;
-        }
-      }
+.banner-detail {
+  .banner-item {
+    height: 60vh;
+    img {
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
     }
   }
 }
