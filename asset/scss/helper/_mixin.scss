@@ -3,13 +3,13 @@
   $text-color,
   $hover-bg,
   $hover-text: $text-color,
-  $padding: 10px 24px,
+
   $radius: 10px,
   $font-size: 1rem
 ) {
   background-color: $bg-color;
   color: $text-color;
-  padding: $padding;
+
   border: none;
   border-radius: $radius;
   font-weight: 600;
