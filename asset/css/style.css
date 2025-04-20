@@ -358,7 +358,7 @@ header .dropdown-menu a:hover {
 .banner2 img {
   width: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .banner-detail {
@@ -369,7 +369,7 @@ header .dropdown-menu a:hover {
 .banner-detail img {
   height: 200px;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   filter: grayscale(70%) blur(2px);
 }
 .banner-detail .banner-item {
@@ -515,4 +515,4 @@ header .dropdown-menu a:hover {
 }
 .detailProducts .detailProducts-pay {
   margin-top: 50px;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
