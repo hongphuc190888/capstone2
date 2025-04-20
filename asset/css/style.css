@@ -1306,4 +1306,6 @@ footer.bg-black .payment-icons img {
     flex-direction: column;
     gap: 10px;
   }
+.detailProducts .detailProducts-pay {
+  margin-top: 45px;
 }/*# sourceMappingURL=style.css.map */
