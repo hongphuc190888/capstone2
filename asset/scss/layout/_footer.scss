@@ -10,4 +10,17 @@ footer {
     color: #fbbf18;
     text-transform: uppercase;
   }
+  .footer-body {
+    .list-unstyled {
+      li {
+        a {
+          color: white;
+          transition: all 0.3s;
+          &:hover {
+            color: #fbbf18;
+          }
+        }
+      }
+    }
+  }
 }

@@ -70,3 +70,10 @@
     background-color: $bgclhover;
   }
 }
+
+@mixin btnColor($cl) {
+  background-color: $cl;
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 20px;
+}
