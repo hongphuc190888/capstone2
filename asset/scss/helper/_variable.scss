@@ -8,3 +8,42 @@ $text-20px: 20px;
 
 // khoang cach giua cac phan
 $top: 80px;
+
+// --- Variables ---
+$primary-color: #e8751a; // Màu cam chính
+$text-color: #333;
+$text-color-light: #fff;
+$secondary-text-color: #555;
+$title-color: #000;
+$border-color: #eee;
+$border-color-medium: #ccc;
+$border-color-dark: #aaa;
+$faq-bg: #f8f8f8;
+$icon-bg: #000;
+$icon-color: #fff;
+$icon-active-bg: orange;
+$star-active-color: #fadb14;
+$star-inactive-color: #d9d9d9;
+$snippet-text-color: red;
+$image-border-color: red;
+$question-color: red;
+$snippet-bg: yellow;
+$gallery-overlay-bg: rgba(0, 0, 0, 0.6);
+$instagram-icon-color: #fff;
+$instagram-icon-bg: rgba(0, 0, 0, 0.4);
+$arrow-bg: #fff;
+$arrow-color: #007aff;
+$arrow-border-color: #e0e0e0;
+$pagination-inactive-color: red;
+$pagination-active-color: red;
+$container-max-width: 1140px;
+$border-radius-small: 8px;
+$border-radius-medium: 12px;
+$border-radius-large: 15px;
+$border-radius-round: 50%;
+$instagram-icon-size: 20px;
+// Breakpoints
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
