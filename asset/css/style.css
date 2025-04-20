@@ -79,9 +79,21 @@ header .btn-header button:hover {
   color: black;
 }
 header .dropdown-menu {
+  background-color: black;
   position: absolute;
-  transform: translateX(-15%);
+  transform: translateX(-13%);
   transition: all 0.3s;
+  width: 100vw;
+}
+header .dropdown-menu h4 {
+  color: #fbbf18;
+}
+header .dropdown-menu a {
+  color: white;
+  transition: all 0.3s;
+}
+header .dropdown-menu a:hover {
+  color: #fbbf18;
 }
 
 .banner {
@@ -491,10 +503,15 @@ header .dropdown-menu {
   justify-content: space-evenly;
   align-items: center;
 }
-.detailProducts .detailProducts-like .number input {
-  border: 1px solid black;
+.detailProducts .detailProducts-like .number .input-group {
+  justify-content: center;
+  align-items: center;
+}
+.detailProducts .detailProducts-like .number .input-group input.form-control {
+  margin-bottom: 20px;
   width: 100px;
-  border-radius: 5px;
+  outline: none;
+  padding: 9px 15px;
 }
 .detailProducts .detailProducts-ship {
   margin-top: 20px;

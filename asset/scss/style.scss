@@ -332,10 +332,18 @@
       justify-content: space-evenly;
       align-items: center;
 
-      input {
-        border: 1px solid black;
-        width: 100px;
-        border-radius: 5px;
+      .input-group {
+        justify-content: center;
+        align-items: center;
+
+        input {
+          &.form-control {
+            margin-bottom: 20px;
+            width: 100px;
+            outline: none;
+            padding: 9px 15px;
+          }
+        }
       }
     }
   }
